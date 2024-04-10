@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: robinraju/release-downloader@v1.8
+      - uses: robinraju/release-downloader@v1.10
         with:
           repository: "pmmp/PHP-Binaries"
           tag: "php-8.0-latest"
@@ -26,7 +26,7 @@ jobs:
           tar -xvzf PHP-Linux-x86_64-PM4.tar.gz -C ./.github/
           rm -r PHP-Linux-x86_64-PM4.tar.gz
 
-      - uses: robinraju/release-downloader@v1.8
+      - uses: robinraju/release-downloader@v1.10
         with:
           repository: "pmmp/PocketMine-MP"
           tag: "4.17.0"
